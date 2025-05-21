@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Saya</title>
+  <style>
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Global Style */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #000000;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(45, 94, 255, 0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      color: #eee;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffd5;
+    }
+
+    /* Section */
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(45, 94, 255, 0.5);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #07c4ea;
+      font-size: 2rem;
+    }
+
+    p, ul {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Tabel Pendidikan */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #d1ff02;
+    }
+
+    th {
+      background: #00ffd5;
+      color: #000;
+    }
+
+    tr:nth-child(even) {
+      background: #1e1e1e;
+    }
+
+    tr:nth-child(odd) {
+      background: #2a2a2a;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      background: #1a1a1a;
+      padding: 2rem 1rem;
+      border-top: 1px solid #b7ff00;
+      text-align: center;
+    }
+
+    .footer-menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-menu a {
+      color: #00ffd5;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>RAYHAN ALFARICHI</h1>
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<section id="tentang">
+  <h2>Tentang Saya</h2>
+  <p>Saya mahasiswa Teknik Informatika yang aktif di UKM Pramuka. Selain suka ngoding, saya juga senang kegiatan luar ruangan, apalagi yang berhubungan dengan alam dan kerja tim. Di waktu luang, saya biasanya main bola bareng teman-teman atau mancing buat refreshing. Bagi saya, keseimbangan antara kuliah, organisasi, dan hobi itu penting, supaya tetap produktif tapi juga nggak kehilangan kesenangan.</p>
+</section>
+
+<section id="pendidikan">
+  <h2>Pendidikan</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tahun</th>
+        <th>Institusi</th>
+        <th>Jurusan</th>
+        <th>Gelar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2023 - masih lanjut</td>
+        <td>Universitas Jabal Ghafur</td>
+        <td>Teknik Informatika D3</td>
+        <td>Ilmu Madya </td>
+      </tr>
+      <tr>
+        <td>2019 - 2022</td>
+        <td>SMA Negeri 2 Delima</td>
+        <td>IPS</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2016 - 2019</td>
+        <td>SMP Negeri 1 Takengon</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2010 - 2016</td>
+        <td>SD Negeri 10 Bebesen</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="keahlian">
+  <h2>Keahlian</h2>
+  <ul>
+    <li>Ngoding sampai lupa waktu (asal jangan lupa makan)</li>
+    <li>Bisa kerja tim, apalagi kalau timnya asik dan ada cemilannya.</li>
+    <li>Aktif di Pramuka, jadi siap siaga... bahkan kalau disuruh ngoding tengah malam</li>
+    <li>Jago cari sinyal di hutan dan ikan di sungai (hasilnya kadang nihil, tapi niatnya 100%).</li>
+  </ul>
+</section>
+
+<section id="kontak">
+    <h2>Kontak</h2>
+    <p>Yuk terhubung! Hubungi saya melalui:</p>
+    <p>
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" style="vertical-align: middle; margin-right: 8px;">
+        WhatsApp: <a href="https://wa.me/6281285615261" target="_blank" style="color: #00ffd5; text-decoration: none;">+62 812-8561-5261</a>
+      </p>      
+    <p>
+      <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" style="vertical-align: middle; margin-right: 8px;">
+      Instagram: <a href="https://instagram.com/ryhan_alf07" target="_blank" style="color: #00ffd5; text-decoration: none;">@ryhan_alf07</a>
+    </p>
+  </section>
+  
+
+  <footer>
+    <div class="footer-menu">
+      <a href="#tentang">Tentang</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
